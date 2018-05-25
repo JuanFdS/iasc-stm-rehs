@@ -15,5 +15,5 @@ import Control.Concurrent.STM
 newTableIO :: IO Table
 newTableIO = atomically newTable
 
-updateAndReadSlotIO :: SlotTransaction -> Table -> IO String
+updateAndReadSlotIO :: SlotTransaction String -> Table -> IO String
 updateAndReadSlotIO transaction = atomically . updateAndReadSlot transaction

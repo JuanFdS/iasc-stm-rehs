@@ -23,3 +23,4 @@ executable ping-pong-hs
                   , network   
                   , stm
                   , split
+                  , unix
